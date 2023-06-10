@@ -55,6 +55,6 @@ end
 
 import Base: show
 
-show(io::IO, t::TicToc) = print(io,"New Timer")
+show(io::IO, t::TicToc) = print(io,"TicToc Timer")
 
 end # module TicTocs
