@@ -16,7 +16,7 @@ tic(t)         # starts the timer
 Then use `toc(t)` to find out how many seconds have 
 elapsed since the timer was started.
 """
-struct TicToc
+mutable struct TicToc
     start::Float64
     TicToc() = new(0.0)
 end
@@ -52,5 +52,9 @@ end
 function toc(t::TicToc)
     time() - t.start
 end
+
+import Base: show
+
+show(io::IO, t::TicToc) = print(io,"New Timer")
 
 end # module TicTocs
