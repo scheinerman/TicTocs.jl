@@ -21,8 +21,11 @@ julia> tic(); sleep(2); println(toc()); sleep(2); println(toc())
 
 Calling `TicToc()` creates a new timer. Start and stop the timer like this:
 ```
+julia> t = TicToc()
+New Timer
+
 julia> tic(t); sleep(4); toc(t)
-4.010519981384277
+4.009500980377197
 ```
 
 The timer started with a plain `tic()` runs independently from one started 
