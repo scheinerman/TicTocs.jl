@@ -1,0 +1,4 @@
+name = "TicTocs"
+uuid = "5892db87-1788-4a73-8d51-2fe602fc6391"
+authors = ["Ed Scheinerman <ers@jhu.edu>"]
+version = "0.0.1"
